@@ -8,3 +8,4 @@ services:
     volumes:
       - ~/.gitconfig:/home/root/.gitconfig:ro
       - ..:/workdir
+      - ./.gitignore:/workdir/.gitignore

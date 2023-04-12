@@ -1,39 +1,19 @@
 {
-    "name": "GoogleAppScript docker",
-    "dockerComposeFile": [
-        "docker-compose.yml"
-    ],
-    "service": "clasp",
-    "remoteUser": "root",
-    "settings": {
-        "terminal.integrated.shell.linux": "zsh"
-    },
-    "workspaceFolder": "/workdir"
+  "name": "GoogleAppScript docker",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "clasp",
+  "remoteUser": "root",
+  "settings": {
+    "terminal.integrated.shell.linux": "zsh"
+  },
+  "workspaceFolder": "/workdir",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "gamunu.vscode-yarn",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
-// {
-//     "name": "Flutter docker",
-//     "dockerComposeFile": [
-//         "docker-compose.yml"
-//     ],
-//     "service": "clasp",
-//     "remoteUser": "root",
-//     "remoteEnv": {
-//         "QT_X11_NO_MITSHM": "1",
-//         "DISPLAY": "${localEnv:DISPLAY}",
-//         "XAUTHORITY": "/tmp/.X11-unix",
-//         "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/flutter/bin"
-//     },
-//     "settings": {
-//         "terminal.integrated.shell.linux": "zsh"
-//     },
-//     "runArgs": [
-//         "--privileged",
-//         "-P"
-//     ],
-//     "extensions": [
-//         "dart-code.flutter"
-//     ],
-//     "initializeCommand": "xhost + local:root",
-//     "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workdir,type=bind,consistency=delegated",
-//     "workspaceFolder": "/workdir"
-// }

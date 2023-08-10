@@ -3,12 +3,12 @@
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "clasp",
   "remoteUser": "root",
-  "settings": {
-    "terminal.integrated.shell.linux": "zsh"
-  },
   "workspaceFolder": "/workdir",
   "customizations": {
     "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
       "extensions": [
         "gamunu.vscode-yarn",
         "esbenp.prettier-vscode",

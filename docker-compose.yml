@@ -6,6 +6,5 @@ services:
     working_dir: /workdir
     command: sleep infinity
     volumes:
-      - ~/.gitconfig:/home/root/.gitconfig:ro
       - ..:/workdir
       - ./.gitignore:/workdir/.gitignore
